@@ -1,0 +1,54 @@
+.container{
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    padding-top:2rem ;
+
+    a{
+        text-decoration: none;
+        
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        font-family: var(--comic-font);
+        color: rgb(247, 76, 20);
+        border: 2px solid black;
+        border-radius: 20px ;
+        width: fit-content;
+        margin: auto;
+        font-size: 2rem;
+        transition: all;
+        cursor: pointer;
+    }
+
+    .ghost{
+        position: absolute;
+        height: 10rem;
+        bottom: 0;
+        right:0;
+        // transform: translateY(-50%);
+        animation: moveAndFlip 20s infinite;
+    }
+
+}
+
+@keyframes moveAndFlip {
+    0% {
+      right: 0;
+      transform: translateY(-50%) scaleX(1);
+    }
+    50% {
+      right: calc(100% - 120px); /* Moves the item to the left edge */
+      transform: translateY(-50%) scaleX(1);
+    }
+    51% {
+      transform: translateY(-50%) scaleX(-1); /* Flips the image */
+    }
+    100% {
+      right: 0;
+      transform: translateY(-50%) scaleX(-1); /* Flipped image returns */
+    }
+  }

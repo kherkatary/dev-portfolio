@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css'
-import { About, Hero, Navbar, Skills, } from './Components'
+import { About, Hero, Navbar, Resume, Skills, } from './Components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +15,8 @@ function App() {
         
       <Hero/>
       <About/>
-      <Skills/>
+      {/* <Skills/> */}
+      <Resume/>
        
       </ParallaxProvider>
     </>
