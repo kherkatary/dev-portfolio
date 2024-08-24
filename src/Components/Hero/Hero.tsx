@@ -29,6 +29,7 @@ const Hero = () => {
                     repeat={Infinity}
                 />
             </div>
+            
 
         
             <img ref={ref} className={styles.human1} src='/human1-Astro.png' alt='human1' />

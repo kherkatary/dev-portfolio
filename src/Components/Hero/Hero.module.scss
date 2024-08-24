@@ -26,10 +26,6 @@
         position: absolute;
         top: 15%;
         color: black;
-        @media screen and (max-width:600px) {
-            font-size: 0.5rem;
-            
-        }
     }
 
     .cloud{
@@ -40,7 +36,7 @@
   
     .human1 {
       position: absolute;
-      bottom: 0;
+      bottom: 4%;
       height: 30rem;
       z-index: 100000000000;
 
@@ -94,7 +90,16 @@
     
   }
 
+  @media screen and (max-witdh) {
+
+    .heroContainer{
+      height: 80vh;
+    }
+    
+  }
+
   @media screen and (max-width:1000px) {
+
 
     .human2, .human3, .human4, .human5, .human6, .human7{
         display: none;
