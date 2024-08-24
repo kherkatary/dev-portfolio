@@ -1,0 +1,61 @@
+.container{
+    background-image: url(/pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: fit-content;
+    min-height: 100vh;
+    
+    .gridContainer{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    position: relative;
+    padding: 5rem;
+
+
+        .content{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            font-family: var(--content-font);
+            font-weight: 200;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    
+        .imageHolder{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+    }
+
+
+    .heading{
+        
+        color: rgb(247, 76, 20);
+        text-align: center;
+        font-family: var(--comic-font);
+        font-size: 5rem;
+        padding: 2rem;
+        
+
+    }
+    
+ 
+    @media screen and (max-width:1000px) {
+
+        .gridContainer{
+            padding: 1rem;
+            .content{
+                font-size: 1rem;
+            }
+        }
+        
+    }
+}
