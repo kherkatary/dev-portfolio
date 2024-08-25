@@ -7,6 +7,10 @@ const Hero = () => {
     const { ref } = useParallax({ speed: 30 });
     return (
         <div className={styles.heroContainer}>
+
+            <div className={styles.heroText}>
+
+            
             <div className={styles.typeAnimation}>
                 <h1 className={styles.heading}>I am Sandeep Kherkatary</h1>
                 
@@ -25,14 +29,13 @@ const Hero = () => {
                     ]}
                     wrapper="span"
                     speed={50}
-                    style={{ color: "black", fontSize: '2em', display: 'inline-block' }}
+                    style={{ color: "black", fontSize: '1.5rem', display: 'inline-block' }}
                     repeat={Infinity}
                 />
             </div>
-            
 
-        
             <img ref={ref} className={styles.human1} src='/human1-Astro.png' alt='human1' />
+            </div>
             <img className={styles.cloud} src="/cloud.png" alt="cloud" />
            
 
