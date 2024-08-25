@@ -5,4 +5,5 @@ import Skills from "./Skills/Skills"
 import Resume from "./Resume/Resume"
 import Education from "./Education/Education"
 import Projects from "./Projects/Projects"
-export {Hero,Navbar, About, Skills,Resume,Education,Projects}
+import Footer from "./Footer/Footer"
+export {Hero,Navbar, About, Skills,Resume,Education,Projects, Footer}
