@@ -3,4 +3,6 @@ import Navbar from "./Navbar/Navbar"
 import About from "./About/About"
 import Skills from "./Skills/Skills"
 import Resume from "./Resume/Resume"
-export {Hero,Navbar, About, Skills,Resume}
+import Education from "./Education/Education"
+import Projects from "./Projects/Projects"
+export {Hero,Navbar, About, Skills,Resume,Education,Projects}

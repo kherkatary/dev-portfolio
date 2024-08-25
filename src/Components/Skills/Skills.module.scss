@@ -1,6 +1,30 @@
 .container{
     min-height: 60vh;
     height: fit-content;
-    background-color: yellow;
+    border: 1px solid black;
+    padding: 1rem;
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        font-family: var(--comic-font);
+        color: rgb(247, 76, 20);
+    }
+
+    .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .iconBox{
+            // border: 1px solid black;
+            text-align: center;
+            margin: 0.5rem;
+            padding: 1rem;
+            p{
+                font-family: var(--content-font);
+            }
+        }
+
+    }
 
 }
