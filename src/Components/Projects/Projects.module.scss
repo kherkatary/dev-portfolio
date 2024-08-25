@@ -1,0 +1,50 @@
+.container{
+
+    min-height: 60vh;
+    padding: 1rem;
+    h1{
+        text-align: center;
+        color: rgb(247, 76, 20);
+        font-family: var(--comic-font);
+        font-size: 4rem;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        padding: 1rem;
+
+        .projectItem{
+            padding: 1rem;
+
+            h3{
+                position: relative;
+                text-align: right;
+                top: 8%;
+                font-family: var(--comic-font);
+                font-size: 2rem;
+
+            }
+            p{
+                font-family: var(--content-font);
+                margin: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            img{
+                width: 100%;
+                clip-path: polygon(0% 15%, 0 0, 15% 0%, 30% 0, 38% 14%, 100% 14%, 100% 100%, 87% 100%, 59% 100%, 32% 100%, 12% 100%, 0 100%);
+            }
+
+            .prolinks{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                   color: black;
+                   padding: 0 1rem;
+                }
+            }
+
+        }
+    }
+}
