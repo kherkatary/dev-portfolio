@@ -1,6 +1,6 @@
 .container{
 
-    min-height: 60vh;
+    height: fit-content;
     padding: 1rem;
     h1{
         text-align: center;
@@ -13,9 +13,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
         padding: 1rem;
+        
 
         .projectItem{
             padding: 1rem;
+            filter: grayscale(100);
 
             h3{
                 position: relative;
@@ -43,6 +45,10 @@
                    color: black;
                    padding: 0 1rem;
                 }
+            }
+
+            &:hover{
+                filter: none;
             }
 
         }

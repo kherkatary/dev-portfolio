@@ -1,5 +1,5 @@
 .container{
-    min-height: 60vh;
+
     height: fit-content;
     border: 1px solid black;
     padding: 1rem;
@@ -13,6 +13,7 @@
     .skills{
         display: flex;
         justify-content: center;
+        padding: 1rem 0;
         align-items: center;
         flex-wrap: wrap;
         .iconBox{
